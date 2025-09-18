@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <title>ForgeFit Gym</title>
+    <meta name="description" content="ForgeFit — moderan fitnes sajt sa prelepim animacijama i efektima." />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Shutter / Page Reveal -->
+    <div class="shutter" aria-hidden="true">
+      <div class="shutter__panel"></div>
+      <div class="shutter__panel"></div>
+      <div class="shutter__panel"></div>
+    </div>
+
+    <!-- Particles Background -->
+    <div id="tsparticles" aria-hidden="true"></div>
+
+    <!-- Header -->
+    <header class="site-header" role="banner">
+      <div class="container nav">
+        <a href="#" class="logo" aria-label="ForgeFit početna">
+          <span class="logo__mark" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="10" width="8" height="4" rx="1.5" fill="currentColor"/>
+              <rect x="14" y="10" width="8" height="4" rx="1.5" fill="currentColor"/>
+              <rect x="9" y="7" width="6" height="10" rx="2" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </span>
+          <span class="logo__text">ForgeFit</span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Glavna navigacija">
+          <a href="#programs" class="nav__link">Programi</a>
+          <a href="#coaches" class="nav__link">Treneri</a>
+          <a href="#pricing" class="nav__link">Cene</a>
+          <a href="#contact" class="nav__link">Kontakt</a>
+        </nav>
+
+        <div class="nav__actions">
+          <a href="#join" class="btn btn--primary btn--magnetic"><span class="btn__inner">Učlani se</span></a>
+          <button class="hamburger" aria-label="Otvori meni" aria-controls="mobile-nav" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobile-nav" class="mobile-nav" aria-label="Mobilna navigacija">
+        <a href="#programs" class="mobile-nav__link">Programi</a>
+        <a href="#coaches" class="mobile-nav__link">Treneri</a>
+        <a href="#pricing" class="mobile-nav__link">Cene</a>
+        <a href="#contact" class="mobile-nav__link">Kontakt</a>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <main>
+      <section class="hero" id="home" aria-label="Početna hero sekcija">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              Podigni <span class="grad">snagu</span>, oblikuj <span class="grad">telo</span>,
+              postani <span class="grad">najbolja verzija</span> sebe.
+            </h1>
+            <p class="hero__subtitle">Vrhunska oprema, stručni treneri i beskompromisan dizajn iskustva.</p>
+            <div class="hero__ctas">
+              <a href="#join" class="btn btn--primary btn--magnetic"><span class="btn__inner">Započni trening</span></a>
+              <a href="#pricing" class="btn btn--ghost btn--magnetic"><span class="btn__inner">Istraži pakete</span></a>
+            </div>
+            <div class="hero__stats" aria-label="Statistika">
+              <div class="stat"><span class="stat__num">24/7</span><span class="stat__label">Pristup</span></div>
+              <div class="stat"><span class="stat__num">50+</span><span class="stat__label">Časova</span></div>
+              <div class="stat"><span class="stat__num">10k+</span><span class="stat__label">Članova</span></div>
+            </div>
+          </div>
+
+          <div class="hero__visual">
+            <div class="orb orb--lg" data-parallax="8"></div>
+            <div class="orb orb--md" data-parallax="-12"></div>
+            <div class="orb orb--sm" data-parallax="18"></div>
+            <div class="ring" data-parallax="-6"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Vendor libs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-4a9dYHkq3oQU9cKk4hWNt4pJZjLS5qYyV8m7s/Wq9kZQdVg8n8Yzv4hMjZs0T5Dq4kQ+9xV8o7W6mSBJ3fQ6xg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-RcJsZbIygF2oL3KZ0Y8H3lWwP+S3tWy8lFz2+6yGqYkZcKkZc8g7w0nq2uF7g7izXf9F8+RkJb1jX2tOa+gUkg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/dist/split-type.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+
+    <!-- App -->
+    <script defer src="./main.js"></script>
+  </body>
+  </html>
+
